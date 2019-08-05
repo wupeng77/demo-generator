@@ -1,0 +1,15 @@
+<#if (column.columnNameLower != 'createdUser')&&(column.columnNameLower != 'createdDate')&&(column.columnNameLower != 'updatedUser')&&(column.columnNameLower != 'updatedDate')>
+${className}Dto.${column.columnNameLower}=${column.columnAlias!}
+</#if>
+
+
+
+<#if (column.columnNameLower != 'createdUser')&&(column.columnNameLower != 'createdDate')&&(column.columnNameLower != 'updatedUser')&&(column.columnNameLower != 'updatedDate')>
+${className}Dto.${column.columnNameLower}=${column.columnAlias!}
+</#if>
+
+<#if (column.columnNameLower=='delFlag')><s:message code="common.delFlag" /><#elseif column.columnNameLower=='createdUser'><s:message code="common.createdUser" /><#elseif column.columnNameLower=='createdDate'><s:message code="common.createdDate" /><#elseif column.columnNameLower=='updatedUser'><s:message code="common.updatedUser" /><#elseif column.columnNameLower=='updatedDate'><s:message code="common.updatedDate" /><#else><s:message code="${className}Dto.${column.columnNameLower}" /></#if>
+
+
+<#if (column.columnNameLower=='delFlag')>delFlagDesc<#elseif column.columnNameLower=='createdUser'>createdUserDesc<#elseif column.columnNameLower=='createdDate'>createdDateDesc<#elseif column.columnNameLower=='updatedUser'>updatedUserDesc<#elseif column.columnNameLower=='updatedDate'>updatedDateDesc<#else>${column.columnNameLower}Desc</#if>
+							   

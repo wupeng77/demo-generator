@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="UFrame" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+	<!-- =================================================================== -->
+	<!-- 变量设置 -->
+	<!-- =================================================================== -->
+	<property environment="env" />
+	<property file="build.properties" />
+	<property name="project.root" value="." />
+	<property name="lib" value="${project.root}/generator/lib" />
+	<property name="ivycache" value="${user.home}/.ivy2" />
+
+
+	<!-- build no.-->
+	<tstamp>
+		<format property="release_date" pattern="yyyyMMddHHmm" />
+	</tstamp>
+
+
+	<target name="lib-clean" description="清空包">
+		<ivy:cleancache />
+		<delete dir="${lib}" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 设置第三方包下载配置文件 -->
+	<!-- =================================================================== -->
+	<target name="configure-lib" description="设置第三方包配置文件">
+		<ivy:configure url="${ivysettings.url}" />
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- 下载或从本地缓存获取第三方包  depends="configure-lib"-->
+	<!-- =================================================================== -->
+	<target name="get-lib" depends="configure-lib" description="下载或从本地缓存获取第三方包">
+		<ivy:resolve file="ivy.xml" conf="*" />
+		<ivy:retrieve pattern="${lib}/[artifact].[ext]" />
+	</target>
+</project>

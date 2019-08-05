@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="http://www.jayasoft.fr/org/ivyrep/ivy-doc.xsl"?>
+<ivy-module version="1.1">
+	<info organisation="com.uframe" module="UFrame" status="integration"
+		revision="1.0.0" />
+	<dependencies>
+	    <dependency org="fakepath" name="antlr" rev="3.2"/>
+	    <dependency org="fakepath" name="freemarker" rev="2.3.16"/>      
+	</dependencies>
+</ivy-module> 

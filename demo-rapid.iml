@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/generator/lib/antlr.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/freemarker.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/ojdbc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/ojdbc6_g.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/ojdbc6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/mysql-connector-java-5.1.3-rc-bin.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/generator/lib/generator.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/generator/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/generator/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library name="antlr.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/antlr.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="freemarker.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/freemarker.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ojdbc.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/ojdbc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ojdbc6_g.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/ojdbc6_g.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ojdbc6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/ojdbc6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-5.1.3-rc-bin.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/mysql-connector-java-5.1.3-rc-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="generator.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/generator/lib/generator.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="antlr" level="project" />
+  </component>
+</module>
